@@ -1,0 +1,19 @@
+[package]
+name = "isotope-calc-tauri"
+version = "0.1.0"
+description = "Tauri приложение для расчета изотопов"
+authors = ["MaryEariel"]
+license = "MIT"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2.0.0", features = [] }
+
+[dependencies]
+tauri = { version = "2.0.0", features = [] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tauri-plugin-http = "2" # ← Добавил по методичке
+tauri-plugin-cors-fetch = "2.1.1" # ← Добавил по методичке
+tauri-plugin-log = "2.7.1"
+log = "0.4.29"
